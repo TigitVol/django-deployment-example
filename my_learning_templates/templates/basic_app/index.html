@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+  {% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <h2>This is index.html showing!</h2>
+    <div class="">
+      <p>Testing text: {{ text }}</p>
+      <br>
+      <p>Test worked {{number}}%</p>
+    </div>
+    {{ text|cut:"world" }}
+    {{ number|add:"99" }}
+  {% endblock %}
